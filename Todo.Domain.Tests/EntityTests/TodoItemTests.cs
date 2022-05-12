@@ -13,6 +13,6 @@ public class TodoItemTests
     public void Dado_um_novo_todo_o_mesmo_nao_pode_ser_concluido()
     {
         // red, green, refactore
-        Assert.AreEqual(_validTodo.Done, true);
+        Assert.AreEqual(_validTodo.Done, false);
     }
 }
