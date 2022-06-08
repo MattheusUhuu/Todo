@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Todo.Domain.Commands;
 using Todo.Domain.Entities;
@@ -12,6 +9,7 @@ namespace Todo.Domain.Api.Controllers;
 
 [ApiController]
 [Route("v1/todos")]
+[Authorize]
 public class TodoController : ControllerBase
 {
     [Route("")]
